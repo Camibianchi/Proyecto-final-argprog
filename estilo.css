@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+*{
+    box-sizing: border-box; 
+    font-family: Work Sans;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contenedor-header{ 
+    background: #2F4F4F;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: Righteous;
+    font-size: 36px;
+    color: #F8F8FF;
+    text-decoration: none;
+
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color:#F8F8FF ;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #808080;
+}
+
+.nav-responsive {
+    background-color: #808080;
+    color: #F8F8FF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.inicio{
+    background: linear-gradient(to top, rgba(38, 30, 35, 0.8), rgba(37, 30, 38, 0.5)), url(fondi.png);
+    background-size: cover;
+    height: 100vh;
+    color:  #fff;
+    display: flex;
+    align-items: center;
+
+}
+
+.inicio .contenedor-banner{
+    padding: 20px;
+    background-color: #2F4F4F;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenedor-banner img{
+    margin-top: 40px;
+    border: 10px solid #808080;
+    display: block;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.inicio .contenedor-banner h2{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenedor-banner .redes a{
+    color:  #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;    
+    transition: .3s;
+}
+
+.inicio .contenedor-banner .redes a:hover{
+
+    background-color: #808080 ;
+}
+
+.sobremi{
+    background-color: #2F4F4F;
+    color: #F8F8FF;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+
+    color: #fcfff8;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+
+}
+
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #8FBC8F;
+    width: 130px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: #1d3030;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #8FBC8F;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses i{ 
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cursos{
+    background-color: #3c6161;
+    color: #F8F8FF;
+    padding: 50px 20px;
+}
+
+.cursos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.cursos h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cursos .fila{
+    display: flex;
+}
+
+.cursos .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.cursos .fila .col h2{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.cursos .curso > span{
+font-weight: bold;
+display: block;
+margin-bottom: 10px;
+}
+
+.cursos .curso .barra-cursos{
+    height: 8px;
+    width: 80%;
+    background-color: #272c27;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cursos .curso .progreso{
+    background-color: #8FBC8F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    
+}
+
+.cursos .curso .barra-cursos span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #8FBC8F;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+
+.cursos .curso .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+
+}
+
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.cursos .curso .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+
+}
+
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+
+.cursos .curso .diseñoux{
+    width: 0%;
+    animation: 2s diseñoux forwards;
+
+}
+
+@keyframes diseñoux {
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.cursos .curso .photoshop{
+    width: 0%;
+    animation: 2s photoshop forwards;
+
+}
+
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.cursos .curso .aftereffects{
+    width: 0%;
+    animation: 2s aftereffects forwards;
+
+}
+
+@keyframes aftereffects {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.cursos .curso .ilustrator{
+    width: 0%;
+    animation: 2s ilustrator forwards;
+
+}
+
+@keyframes ilustrator {
+    0%{width: 0%;}
+    100%{width: 15%;}
+}
+
+
+.experiencialaboral{
+    background-color: #2F4F4F;
+    color: #F8F8FF;
+    padding: 50px 20px;
+}
+
+.experiencialaboral .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.experiencialaboral h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.experiencialaboral .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.experiencialaboral .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+
+.experiencialaboral .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+
+.experiencialaboral .fila .izquierda{
+    border-right: 2px solid #1d3030;
+
+}
+
+
+.experiencialaboral .fila .derecha{
+    border-left: 2px solid #1d3030;
+
+}
+
+
+.experiencialaboral .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #3f6464;
+    position: relative;
+}
+
+
+.experiencialaboral .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #8FBC8F;
+    font-weight: bold;
+
+}
+
+.experiencialaboral .fila .item .fecha{
+    
+    font-size: 15px;
+    
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.experiencialaboral .fila .izq{
+        border-right: 2px solid #8FBC8F;
+        margin-right: 20px;
+}
+
+
+.experiencialaboral .fila .der{
+    border-right: 2px solid #8FBC8F;
+    margin-right: 20px;
+}
+
+
+.experiencialaboral .fila .item .conectori{
+    height: 2px;
+    background-color: #8FBC8F;
+    width: 47px;
+    position: absolute;
+    top: 50px;
+    right: -47px;
+    z-index: 5;
+}
+
+
+.experiencialaboral .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #8FBC8F;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+
+footer{
+    background-color: #1d3030;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+
+}
+
+footer .redes{
+
+    margin-bottom: 20px;
+
+}
+
+footer .redes a{
+    color:  #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;    
+    transition: .3s;
+
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #8FBC8F;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:980px){
+    nav{ 
+        display: none;
+    }
+
+
+.nav-responsive{
+    display: block;
+}
+
+nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #1d3030;
+    width: 180px;
+}
+
+}
+
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+}
